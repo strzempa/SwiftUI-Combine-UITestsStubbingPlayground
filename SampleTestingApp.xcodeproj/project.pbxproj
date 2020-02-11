@@ -39,6 +39,7 @@
 		36C1150C23F2CF93001A39F8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1150A23F2CF7D001A39F8 /* Environment.swift */; };
 		36C1150D23F2CFB3001A39F8 /* EnvironmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1150423F2CE26001A39F8 /* EnvironmentProvider.swift */; };
 		36C1150F23F2DD81001A39F8 /* SampleTestingAppUITestsWithLocalServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1150E23F2DD81001A39F8 /* SampleTestingAppUITestsWithLocalServer.swift */; };
+		36C1151123F2E4F5001A39F8 /* ItemDetailsAlertRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1151023F2E4F5001A39F8 /* ItemDetailsAlertRobot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		36C1150823F2CF65001A39F8 /* XCUIApplication+launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+launch.swift"; sourceTree = "<group>"; };
 		36C1150A23F2CF7D001A39F8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		36C1150E23F2DD81001A39F8 /* SampleTestingAppUITestsWithLocalServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTestingAppUITestsWithLocalServer.swift; sourceTree = "<group>"; };
+		36C1151023F2E4F5001A39F8 /* ItemDetailsAlertRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsAlertRobot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				36C114E423F2B3BC001A39F8 /* ListRobot.swift */,
+				36C1151023F2E4F5001A39F8 /* ItemDetailsAlertRobot.swift */,
 			);
 			path = Robots;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				36C1150F23F2DD81001A39F8 /* SampleTestingAppUITestsWithLocalServer.swift in Sources */,
 				36C1150D23F2CFB3001A39F8 /* EnvironmentProvider.swift in Sources */,
 				36C114F223F2CA4E001A39F8 /* Stubs.swift in Sources */,
+				36C1151123F2E4F5001A39F8 /* ItemDetailsAlertRobot.swift in Sources */,
 				36C114E723F2B81A001A39F8 /* XCUIElement+waitForVisible.swift in Sources */,
 				36C114D523F29CD4001A39F8 /* AccessibilityIdentifiers.swift in Sources */,
 			);

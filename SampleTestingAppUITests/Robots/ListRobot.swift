@@ -49,4 +49,10 @@ final public class ListRobot {
                        text,
                        "Label should equal '\(text)' but it is not")
     }
+    
+    func tapItem(index: Int, file: StaticString = #file, line: UInt = #line) {
+        let tablesQuery = defaultQuery.tables
+        let item = tablesQuery.staticTexts["\(AccessibilityIdentifiers.List.Items.item)\(index)"]
+        item.tap()
+    }
 }

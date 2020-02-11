@@ -9,7 +9,7 @@ final class ServiceStubber {
     /// Needs to be used inside XCTestCase setUp method before XCUIApplication().launch()
     ///
     /// - Parameter stubs: array of prepared network call stubs infos.
-    func start(with stubs: [HTTPStubInfo]) throws {
+    func start(with stubs: [HTTPStubInfo] = []) throws {
         try apply(stubs)
         try server.start()
     }
