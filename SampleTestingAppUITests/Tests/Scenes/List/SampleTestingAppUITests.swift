@@ -28,12 +28,4 @@ final class SampleTestingAppUITests: XCTestCase {
             $0.itemLabel(index: 4, equals: "Y-wing")
         }
     }
-    
-    func test_givenList_whenFetched_thenHeaderChanges() {
-        list(app) {
-            $0.ifVisibleHeader(equals: false)
-            $0.ifVisibleTapFetch()
-            $0.ifVisibleHeader(equals: true)
-        }
-    }
 }

@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "FC443F8B-2A78-42E6-95B1-F1CE24692FBC",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SampleTestingApp.xcodeproj",
+      "identifier" : "36C1148A23F28A71001A39F8",
+      "name" : "SampleTestingApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SampleTestingApp.xcodeproj",
+        "identifier" : "36C114A023F28A74001A39F8",
+        "name" : "SampleTestingAppTests"
+      }
+    },
+    {
+      "skippedTests" : [
+        "SampleTestingAppUITests\/test_givenList_whenFetched_thenHeaderChanges()"
+      ],
+      "target" : {
+        "containerPath" : "container:SampleTestingApp.xcodeproj",
+        "identifier" : "36C114AB23F28A74001A39F8",
+        "name" : "SampleTestingAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

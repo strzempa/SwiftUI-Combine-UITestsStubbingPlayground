@@ -28,7 +28,7 @@
 		36C114F023F2C534001A39F8 /* ServiceStubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C114EF23F2C534001A39F8 /* ServiceStubber.swift */; };
 		36C114F223F2CA4E001A39F8 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C114F123F2CA4E001A39F8 /* Stubs.swift */; };
 		36C114F423F2CA59001A39F8 /* HTTPStubInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C114F323F2CA59001A39F8 /* HTTPStubInfo.swift */; };
-		36C114F823F2CB86001A39F8 /* starships.json in Resources */ = {isa = PBXBuildFile; fileRef = 36C114F723F2CB86001A39F8 /* starships.json */; };
+		36C114F823F2CB86001A39F8 /* five_starships.json in Resources */ = {isa = PBXBuildFile; fileRef = 36C114F723F2CB86001A39F8 /* five_starships.json */; };
 		36C114FF23F2CD55001A39F8 /* NSURLSession+Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C114FE23F2CD55001A39F8 /* NSURLSession+Environment.m */; };
 		36C1150123F2CD84001A39F8 /* MethodSwizzling.h in Sources */ = {isa = PBXBuildFile; fileRef = 36C1150023F2CD84001A39F8 /* MethodSwizzling.h */; };
 		36C1150323F2CDB9001A39F8 /* MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C1150223F2CDB9001A39F8 /* MethodSwizzling.m */; };
@@ -85,7 +85,7 @@
 		36C114EF23F2C534001A39F8 /* ServiceStubber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStubber.swift; sourceTree = "<group>"; };
 		36C114F123F2CA4E001A39F8 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
 		36C114F323F2CA59001A39F8 /* HTTPStubInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStubInfo.swift; sourceTree = "<group>"; };
-		36C114F723F2CB86001A39F8 /* starships.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = starships.json; sourceTree = "<group>"; };
+		36C114F723F2CB86001A39F8 /* five_starships.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = five_starships.json; sourceTree = "<group>"; };
 		36C114FD23F2CD55001A39F8 /* SampleTestingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleTestingApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		36C114FE23F2CD55001A39F8 /* NSURLSession+Environment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Environment.m"; sourceTree = "<group>"; };
 		36C1150023F2CD84001A39F8 /* MethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzling.h; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 		36C1150A23F2CF7D001A39F8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		36C1150E23F2DD81001A39F8 /* SampleTestingAppUITestsWithLocalServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTestingAppUITestsWithLocalServer.swift; sourceTree = "<group>"; };
 		36C1151023F2E4F5001A39F8 /* ItemDetailsAlertRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsAlertRobot.swift; sourceTree = "<group>"; };
+		36C1151323F2F124001A39F8 /* SampleTestingApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleTestingApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 		36C1148223F28A71001A39F8 = {
 			isa = PBXGroup;
 			children = (
+				36C1151323F2F124001A39F8 /* SampleTestingApp.xctestplan */,
 				36C1148D23F28A71001A39F8 /* SampleTestingApp */,
 				36C114A423F28A74001A39F8 /* SampleTestingAppTests */,
 				36C114AF23F28A74001A39F8 /* SampleTestingAppUITests */,
@@ -289,7 +291,7 @@
 		36C114F523F2CB5C001A39F8 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				36C114F723F2CB86001A39F8 /* starships.json */,
+				36C114F723F2CB86001A39F8 /* five_starships.json */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -453,7 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C114F823F2CB86001A39F8 /* starships.json in Resources */,
+				36C114F823F2CB86001A39F8 /* five_starships.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

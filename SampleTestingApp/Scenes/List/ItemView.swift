@@ -17,17 +17,22 @@ struct ItemView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("\(data.name ?? "")")
-                .accessibility(identifier: "\(AccessibilityIdentifiers.List.Items.item)\(self.index)")
-            Button(action: {
-                self.showingAlert = true
-            }) {
-                Text("Show")
+        HStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                Text("\(data.name ?? "")")
+                    .foregroundColor(.white)
+                    .accessibility(identifier: "\(AccessibilityIdentifiers.List.Items.item)\(self.index)")
+                Button(action: {
+                    self.showingAlert = true
+                }) {
+                    Text("")
+                }
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text(data.name ?? ""), message: Text(data.model ?? ""), dismissButton: .default(Text("Close")))
+                }
             }
-            .alert(isPresented: $showingAlert) {
-                Alert(title: Text(data.name ?? ""), message: Text(data.model ?? ""), dismissButton: .default(Text("Close")))
-            }
+            .foregroundColor(.blue)
         }
     }
 }

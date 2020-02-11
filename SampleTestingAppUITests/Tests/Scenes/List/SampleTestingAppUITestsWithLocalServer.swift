@@ -22,8 +22,8 @@ final class SampleTestingAppUITestsWithLocalServer: XCTestCase {
         super.tearDown()
     }
     
-    func test_givenListLocalEndoint_whenFetched_thenProperItemsVisible() throws {
-        try stubber.apply(Stubs.starships)
+    func test_givenList_whenFetched_thenProperItemsVisible() throws {
+        try stubber.apply(Stubs.fiveStarships)
         
         list(app) {
             $0.ifVisibleTapFetch()
@@ -35,8 +35,8 @@ final class SampleTestingAppUITestsWithLocalServer: XCTestCase {
         }
     }
     
-    func test_givenListLocalEndoint_whenFetched_andItemTapped_thenAlertAppears() throws {
-        try stubber.apply(Stubs.starships)
+    func test_givenList_whenFetched_andItemTapped_thenAlertAppears() throws {
+        try stubber.apply(Stubs.fiveStarships)
         
         let alertRobot = itemDetailsAlert(app)
         let listRobot = list(app)
@@ -45,16 +45,6 @@ final class SampleTestingAppUITestsWithLocalServer: XCTestCase {
             $0.ifVisibleTapFetch()
             $0.tapItem(index: 0)
         }
-        alertRobot
-            .closeAlert()
-        
-        listRobot
-            .tapItem(index: 1)
-        alertRobot
-            .closeAlert()
-        
-        listRobot
-            .tapItem(index: 2)
         alertRobot
             .closeAlert()
         
@@ -70,7 +60,7 @@ final class SampleTestingAppUITestsWithLocalServer: XCTestCase {
     }
     
     func test_givenListLocalEndoint_whenItemTapped_thenAlertContainsProperTexts() throws {
-        try stubber.apply(Stubs.starships)
+        try stubber.apply(Stubs.fiveStarships)
                 
         list(app) {
             $0.ifVisibleTapFetch()
@@ -85,6 +75,16 @@ final class SampleTestingAppUITestsWithLocalServer: XCTestCase {
         itemDetailsAlert(app) {
             $0.label(equals: "Twin Ion Engine Advanced x1")
             $0.closeAlert()
+        }
+    }
+    
+    func test_givenList_whenFetched_thenHeaderChanges() throws {
+        try stubber.apply(Stubs.fiveStarships)
+        
+        list(app) {
+            $0.ifVisibleHeader(equals: false)
+            $0.ifVisibleTapFetch()
+            $0.ifVisibleHeader(equals: true)
         }
     }
 }
