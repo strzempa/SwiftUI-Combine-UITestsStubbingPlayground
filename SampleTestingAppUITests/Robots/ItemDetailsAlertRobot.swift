@@ -22,7 +22,7 @@ final public class ItemDetailsAlertRobot {
     }
     
     func closeAlert(file: StaticString = #file, line: UInt = #line) {
-        defaultQuery.alerts.buttons["Close"].tap()
+        defaultQuery.alerts.buttons[AccessibilityIdentifiers.Alert.Buttons.close].tap()
     }
     
     func label(equals text: String, file: StaticString = #file, line: UInt = #line) {

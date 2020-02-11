@@ -69,9 +69,3 @@ struct ListView: View {
         tasks?.cancel()
     }
 }
-
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ListView(swapiService: DefaultServiceFactory.makeSWAPIService())
-//    }
-//}
